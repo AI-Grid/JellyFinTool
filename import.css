@@ -1,0 +1,65 @@
+/*Make the red checkmark and likes blue like everything else*/
+.playstatebutton-icon-played, .ratingbutton-icon-withrating {color: #00a4dc;}
+
+/*Narrow the login form, size according to display size (bigger on mobile)*/
+#loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
+
+/*Hide "please login" text, margin is to prevent login form moving too far up*/
+#loginPage h1 {display: none}
+#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
+
+/*Hide "manual" and "forgot" buttons*/
+#loginPage .raised.cancel.block.btnManual.emby-button {display: none}
+/*#loginPage .raised.cancel.block.btnForgotPassword.emby-button {display: none}*/
+
+/*Login background*/
+#loginPage {background: url(https://pox353.mooo.com/web/bbodback.jpg) !important; background-size: cover !important;}
+
+/*Lighten background*/
+.backgroundContainer.withBackdrop {background-color: rgba(0, 0, 0, 0.34) !important;}
+
+/*transparent top bar*/
+.skinHeader-withBackground {background-color: #20202000 !important;}
+
+/*Partialy transparent side bar*/
+div.mainDrawer {background-color: #1010109c !important;}
+
+/*List Item make solid background*/
+.listItem { background: #00000082 !important;}
+ 
+/*Transparent background cards*/
+.cardBox:not(.visualCardBox) .cardPadder { background-color: #24242400 !important;}
+
+/*no box shadow*/
+.cardBox:not(.visualCardBox) .cardPadder, .cardContent-shadow { box-shadow: 0 0.0725em 0.29em 0 rgba(0, 0, 0, 0) !important;}
+
+/*top ribbon movies transparency*/
+.detailRibbon { background: rgba(32, 32, 32, 0.29) !important;}
+
+/*logo position height on tv page*/
+.detailLogo{top: 6vh !important;}
+
+/* Remove Media Images */
+/*.section0 .cardScalable {display: none;}*/
+
+/* remove My Media title */
+.section0 .sectionTitle {display: none;}
+
+/* My Media Styling */
+.section0 .itemsContainer {align-items: center; justify-content: center;}
+/*.section0 button.itemAction.textActionButton {height: 3.5em; background: #30303000; border-radius: 0.2em;}*/
+.section0 .overflowBackdropCard, .section0 .overflowSmallBackdropCard {max-width: 15vw;}
+/*.section0 .emby-scroller {margin-right: 0;}*/
+/*.section0 .emby-scrollbuttons {display: none;}*/
+/*.section0 .itemsContainer {flex-wrap: wrap;}*/
+/*@media (max-width: 75em) and (orientation: landscape){.section0 {display: none;} }*/
+/*@media (max-width: 75em){.section0 {display: none;}    }*/
+
+/*My custom posters location*/
+/*.detailImageContainer {position: relative; margin-top: -61vh; margin-bottom: 10vh; float: left; width: 120vw; z-index: 3;}*/
+
+/*Logo placement on the detail page*/
+.detailLogo {top: 9vh !important; left: 450px !important;}
+
+/*blurfix for transparent library icons*/
+div[data-type="CollectionFolder"] canvas {display: none;}
